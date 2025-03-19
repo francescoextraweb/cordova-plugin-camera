@@ -68,7 +68,14 @@ function capture (success, errorCallback, opts) {
 
     video.width = targetWidth;
     video.height = targetHeight;
-    button.innerHTML = 'Capture!';
+    let video_options = {
+        facingMode: { exact: "user" }
+    };
+
+    if (opts[11] == 0) { // BACK
+        video_options.facingMode = { exact: "environment" }
+    }
+    button.innerHTML = 'Scatta!';
 
     button.onclick = function () {
         // create a canvas and capture a frame from video stream

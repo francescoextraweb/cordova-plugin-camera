@@ -11,8 +11,14 @@
       "browser"
     ]
   },
-  "repository": "github:apache/cordova-plugin-camera",
-  "bugs": "https://github.com/apache/cordova-plugin-camera/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francescoextraweb/cordova-plugin-camera.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francescoextraweb/cordova-plugin-camera/issues"
+  },
+  "homepage": "https://github.com/francescoextraweb/cordova-plugin-camera#readme",
   "keywords": [
     "cordova",
     "camera",
